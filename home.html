@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACEJ Karama TSS - Muhanga District</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+
+    /* Header */
+    header {
+      background-color: #1e90ff;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    nav {
+      background-color: #0077cc;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+      color: white;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    .hero button {
+      padding: 12px 30px;
+      font-size: 1em;
+      background-color: #ffcc00;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .hero button:hover {
+      background-color: #ffdd33;
+    }
+
+    /* Sections */
+    section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2.section-title {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #1e90ff;
+    }
+
+    /* About Section */
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about img {
+      width: 400px;
+      border-radius: 10px;
+    }
+
+    .about .text {
+      max-width: 600px;
+    }
+
+    .about .text p {
+      margin-bottom: 15px;
+    }
+
+    /* Features Section */
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .feature-card {
+      background-color: white;
+      padding: 20px;
+      width: 250px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+    }
+
+    .feature-card h3 {
+      margin-bottom: 15px;
+      color: #0077cc;
+    }
+
+    /* News Section */
+    .news {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .news-card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+    }
+
+    .news-card h4 {
+      margin-bottom: 10px;
+      color: #1e90ff;
+    }
+
+    /* Gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 250px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0077cc;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .about {
+        flex-direction: column;
+      }
+
+      .about img, .about .text {
+        width: 100%;
+      }
+
+      .features, .news, .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .feature-card, .news-card, .gallery img {
+        width: 90%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>ACEJ Karama TSS</h1>
+    <p>Muhanga District – Excellence in Learning</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="">Home</a>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#news">News</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Event</a>
+    <a href="#contact">Admission</a>
+    <a href="#contact"></a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to ACEJ Karama TSS</h2>
+    <p>Your Pathway to Academic Excellence</p>
+    <button onclick="window.location.href='#admissions'">Apply Now</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2 class="section-title">About Our School</h2>
+    <div class="about">
+      <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=800&q=80" alt="School Building">
+      <div class="text">
+        <p>ACEJ Karama TSS, located in Muhanga District, is committed to providing quality education for all students. We focus on academic excellence, character development, and extracurricular growth.</p>
+        <p>Our mission is to nurture talented, responsible, and knowledgeable students who can excel in Rwanda and beyond.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <h2 class="section-title">Why Choose Our School</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>Experienced Teachers</h3>
+        <p>Our qualified teachers guide students with modern teaching methods.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Modern Facilities</h3>
+        <p>Labs, library, sports grounds, and ICT resources for practical learning.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Online Resources</h3>
+        <p>Access homework, study materials, and exam prep online.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Events & Activities</h3>
+        <p>Regular cultural, sports, and science events for holistic development.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section id="news">
+    <h2 class="section-title">Latest News & Announcements</h2>
+    <div class="news">
+      <div class="news-card">
+        <h4>School Reopens for Term 1</h4>
+        <p>Classes will begin on 5th February 2026. Please ensure students are ready.</p>
+      </div>
+      <div class="news-card">
+        <h4>Science Fair Competition</h4>
+        <p>Our annual science fair will be held on 20th March 2026. All students are encouraged to participate.</p>
+      </div>
+      <div class="news-card">
+        <h4>Sports Day Announcement</h4>
+        <p>Sports day will be celebrated on 15th April 2026. Join us for fun and competitions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2 class="section-title">Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1596495577886-d920f9a3c3e0?auto=format&fit=crop&w=800&q=80" alt="Classroom">
+      <img src="https://images.unsplash.com/photo-1596495577880-6b9b1b6e38e6?auto=format&fit=crop&w=800&q=80" alt="School Event">
+      <img src="https://images.unsplash.com/photo-1596495577878-8c9fa292f5a0?auto=format&fit=crop&w=800&q=80" alt="Students Playing">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p style="text-align:center;">Phone: +250 78 123 4567 | Email: info@acejkarama.rw</p>
+    <p style="text-align:center;">Address: Muhanga District, Rwanda</p>
+    <p style="text-align:center;"><a href="https://goo.gl/maps/abcd1234" target="_blank">View on Google Maps</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 ACEJ Karama TSS. All rights reserved. | <a href="#">Privacy Policy</a>
+  </footer>
+
+</body>
+</html>

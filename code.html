@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern School Website | Excellence in Education</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #f4f7fb;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: #0a3d62;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: url(stud.jpg) center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  stroke-opacity: 0.6;
+}
+
+.hero h2 {
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.hero button {
+  padding: 12px 25px;
+  border: none;
+  background: #f1c40f;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* SECTION */
+section {
+  padding: 60px 40px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #0a3d62;
+}
+
+/* ABOUT */
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.about img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* CONTACT */
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+}
+
+button.submit {
+  background: #0a3d62;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: #0a3d62;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+@media(max-width:768px) {
+  .hero h2 {
+    font-size: 32px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🌍 Excellence School</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#academics">Academics</a>
+    <a href="#admissions">Admissions</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div>
+    <h2>Shaping Future Leaders</h2>
+    <p>Quality Primary & Secondary Education</p>
+    <button>Apply Now</button>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+<h2>About Our School</h2>
+<div class="about">
+  <div>
+    <p>
+      Excellence School provides quality education from Primary to Secondary level.
+      We focus on academic excellence, discipline, innovation, and moral values.
+    </p>
+    <p>
+      Our mission is to develop confident learners prepared for global challenges.
+    </p>
+  </div>
+  <img src="back.jpg">
+</div>
+</section>
+
+<!-- ACADEMICS -->
+<section id="academics">
+<h2>Academics</h2>
+<div class="cards">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1584697964403-8f4b8b4c8f2a">
+    <h3>Primary School</h3>
+    <p>Strong foundation in literacy, numeracy, and creativity.</p>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1">
+    <h3>O-Level</h3>
+    <p>Comprehensive curriculum aligned with national standards.</p>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc">
+    <h3>A-Level</h3>
+    <p>Advanced subjects preparing students for university.</p>
+  </div>
+</div>
+</section>
+
+<!-- ADMISSIONS -->
+<section id="admissions">
+<h2>Admissions</h2>
+<div class="cards">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1517520287167-4bbf64a00d66">
+    <h3>Requirements</h3>
+    <p>Previous academic records and entrance assessment.</p>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692">
+    <h3>Application</h3>
+    <p>Fill online or visit the school administration office.</p>
+  </div>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+<h2>School Gallery</h2>
+<div class="gallery">
+  <img src="stud.jpg">
+  <img src="stude.webp">
+  <img src="https://images.unsplash.com/photo-1532619675605-1ede6c2ed2d0">
+  <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f">
+  <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754">
+  <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b">
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact Us</h2>
+<div class="contact">
+  <div>
+    <p><strong>📍 Location:</strong> Rwanda</p>
+    <p><strong>📞 Phone:</strong> +250 7XX XXX XXX</p>
+    <p><strong>📧 Email:</strong> info@school.rw</p>
+  </div>
+  <form>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button class="submit">Send Message</button>
+  </form>
+</div>
+</section>
+
+<footer>
+  <p>© 2026 Excellence School | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
