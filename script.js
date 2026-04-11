@@ -67,3 +67,33 @@ document.querySelectorAll(".nav-list a").forEach(link => {
     navList.classList.remove("show");
   });
 });
+
+const applyForm = document.getElementById("applyForm");
+const formStatus = document.getElementById("formStatus");
+if (applyForm) {
+  applyForm.addEventListener("submit", event => {
+    event.preventDefault();
+
+    const fullName = document.getElementById("fullName").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const level = document.getElementById("level").value.trim();
+    const program = document.getElementById("program").value.trim();
+    const notes = document.getElementById("notes").value.trim();
+
+    const subject = encodeURIComponent(`ACEJ application from ${fullName}`);
+    const body = encodeURIComponent(`Full name: ${fullName}
+Email: ${email}
+Phone: ${phone}
+Applying for: ${level}
+Preferred program/trade: ${program}
+Notes: ${notes}`);
+    const mailtoLink = `mailto:emmanueldukundegusenga@gmail.com?subject=${subject}&body=${body}`;
+
+    if (formStatus) {
+      formStatus.textContent = "Opening your email app so you can send the application to emmanueldukundegusenga@gmail.com.";
+    }
+
+    window.location.href = mailtoLink;
+  });
+}
